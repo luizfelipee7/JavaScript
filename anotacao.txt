@@ -1,0 +1,5 @@
+
+
+window.alert('')  ou alert   // da um alerta no site 
+window.confirm('')           // confirmar alerta
+window.prompt('')            // digitar algo
