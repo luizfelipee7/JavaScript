@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      body
+      {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #res
+      {
+        border: 1px solid black;
+        display: inline;
+        padding: 5px;
+      }
+      input 
+      {
+        cursor: pointer;
+      }
+
+   </style>
+    <title>Dom</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend> Somando Valores</legend>
+        <p>
+            <label for="txtn1">numero 1:</label>
+            <input type="number" name="txtn1" id="txtn1">
+        </p>
+        <p>
+            <label for="txtn2">numero 2:</label>
+            <input type="number" name="txtn2" id="txtn2">
+        <p>
+           <input type="button" value="somar" onclick="somar()">
+        </p>
+
+        <div id="res" >Resultado</div>
+    </fieldset>
+
+
+    <script>
+       
+
+        function somar()
+        {
+            var txtn1 = document.getElementById('txtn1')
+            var txtn2 = document.getElementById('txtn2')
+            var resultado = document.getElementById('res')
+            var n1 = Number(txtn1.value)
+            var n2 = Number(txtn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} + ${n2} eh igual a <strong>${s}</strong>`
+
+            
+           
+        }
+    </script>
+</body>
+</html>

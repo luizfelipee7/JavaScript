@@ -3,3 +3,49 @@
 window.alert('')  ou alert   // da um alerta no site 
 window.confirm('')           // confirmar alerta
 window.prompt('')            // digitar algo
+ document.write              // escrever algo
+
+
+   VARIVEL
+   ex:
+     var = nome -  18 - 18.2 - 'luiz' true - false - null - undefined - object - function
+
+     typeof // retorna o tipo de variavel
+
+     tipos:
+
+       number 
+         infinity
+         NaN
+       
+       object
+         Array
+
+         .length        // tamanho da letra
+         .toUpperCase() // letra maiuscula
+         .toFixed(2).replace('.',',')  // aumentar numeros depois da virgular e trocar o . por ,
+         .toLocaleString('pt-br', {style: 'currency', currency: 'BRL - USD - EUR'})  // converte o numero em nota
+
+       OPERADORES
+
+         Aritimetico
+           +,   // somar
+           -,   // subtrair
+           *,   // multiplicar
+           /,   // divisao
+           %,   // resto
+           **   // potencia
+         atribuicao
+         relacionais
+         logicos
+         ternarios
+           
+           DOM
+             window
+               {
+                location    // de onde voce veio e pra onde vai
+                document    // documento atual
+                history     // guarda de onde voce veio  epra onde voce vai
+               }
+            innerTEXT   // traz o txto da tag
+            innerHTML   // traz o texto ja formatado

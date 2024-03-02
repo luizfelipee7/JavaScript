@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    body
+    {
+        background-color: rgb(15, 30, 97);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.6em;
+    }
+   </style>
+    <title>Dom</title>
+</head>
+<body>
+    <h1>estudos de DOM</h1>
+    <p>aqui vair o resultado</p>
+    <p>aprendendo usar <strong>DOM</strong> em js</p>
+    <div id="msg">clique em mim</div>
+    <div name="msg" >clique em mim 2</div>
+    <div class="msg" >clique em mim 3</div>
+
+    <div id="msg4" >clique em mim 4</div>
+    <div class="msg5" >clique em mim 5</div>
+    <div name="msg6" >clique em mim 6</div>
+
+
+    <script>
+        window.document.write(window.document.URL)
+        
+        var corpo = document.body
+        corpo.style.backgroundColor = 'black'
+        
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(p1.innerHTML)
+        p1.style.color = 'blue'
+       
+        var msg = document.getElementById('msg')
+        window.document.write(msg.innerHTML)
+        msg.style.background = 'green'
+        msg.innerText = 'trocado-id'  
+
+        var msg2 = document.getElementsByName('msg')[0]
+        msg2.innerText = 'trocado - name'
+
+        var msg3 = document.getElementsByClassName('msg')[0]
+        msg3.innerText = 'trocado - classe'
+
+        var msg4 = window.document.querySelector('#msg4')
+        msg4.style.background = 'blue'
+
+        var msg5 = window.document.querySelector('.msg5')
+        msg5.style.background = 'green'
+
+    </script>
+</body>
+</html>
