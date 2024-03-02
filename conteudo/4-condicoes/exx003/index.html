@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistemas de multas</h1>
+    <fieldset>
+        <legend> Somando Valores</legend>
+        <p>
+            <label for="ivel">velocidade do carro:</label>
+            <input type="number" name="vel" id="ivel"> km/h
+        </p>
+       
+           <p>
+            <input type="button" value="verificar" onclick="calcular()">
+        </p>
+         
+        
+
+        <div id="res" >Resultado</div>
+    </fieldset>
+    
+    <script>
+        
+
+        function calcular()
+        {
+            var txtv = document.getElementById('ivel')
+            var res = document.getElementById('res')         
+            var vel = Number(ivel.value)
+            
+            res.innerHTML = `<p>sua velocidade atual eh de <strong>${vel} km/h</strong></p>`
+            
+            if(vel > 60)
+            {
+                res.innerHTML += `<p><strong>multado!</strong></p>`
+            }
+                res.innerHTML += `dirija com seguranca`
+            
+        }
+        
+    </script>
+</body>
+</html>

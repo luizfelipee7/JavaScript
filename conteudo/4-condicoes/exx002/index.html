@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *
+    {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    fieldset
+    {
+        background-color: aqua;
+    }
+    legend
+    {
+        text-align: center;
+        font-size: 1.8em;
+    }
+</style>
+<body>
+    <h1>Sistemas de paises</h1>
+    <fieldset>
+        <legend> pais</legend>
+        <p>
+            <label for="ipais">mora em qual pais:</label>
+            <input type="text" name="pais" id="ipais">
+        </p>
+       
+           <p>
+            <input type="button" value="verificar" onclick="calcular()">
+        </p>
+         
+        
+
+        <div id="res" >Resultado</div>
+    </fieldset>
+    
+    <script>
+        
+
+        function calcular()
+        {
+            var vel = (ipais.value)
+            var res = document.getElementById('res')         
+          
+            
+            res.innerHTML = `<p>seu pais atual eh  <strong>${vel.toUpperCase()}</strong></p>`
+
+            if(vel == `brasil`)
+            {
+                res.innerHTML += `<p>voce eh <strong>Brasileiro!</strong></p>`
+            }
+            else
+            {
+                res.innerHTML += `<p>voce eh <strong>estrangeiro!</strong></p>`
+            }
+           
+           
+            
+            
+            
+            
+        }
+        
+    </script>
+</body>
+</html>
