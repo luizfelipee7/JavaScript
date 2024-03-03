@@ -31,13 +31,18 @@ section
     
 }
 
-input
+p
 {
     margin-bottom: 30px;
 }
 
 
-
+#res > p
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
+}
 
 footer
 {
