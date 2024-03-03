@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1> Verificador de idade </h1>
+    </header>
+   
+      <section>
+          <label for="nasc">Ano de Nascimento</label>  
+          <input type="number" name="nasc" id="nasc"> <br>
+          
+
+          <p>Sexo: 
+              <input type="radio" name="sexo" id="isxmas" value="M" checked>
+              <label for="isxmas">Masculino</label>
+              <input type="radio" name="sexo" id="isxfen" value="F" >
+              <label for="isxfen">Feminino</label>             
+          </p>
+          <p>
+            <input  type="button" value="Verificar" onclick="verificar()"> 
+          </p>
+
+          <div>
+              <p id="res" style="text-align: center;">Preencha os dados acima para ver o resultado!</p>
+          </div>
+          
+      </section>
+      <footer>@ CursoemVideo</footer>
+   
+</body>
+</html>
